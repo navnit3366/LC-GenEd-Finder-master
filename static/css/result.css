@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* Elements */
+table {
+    border: 1px;
+    border-color: #000;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 1.2em;
+}
+th {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: "myriad-pro-condensed";
+}
+h1 {
+    font-size: 4.5em;
+}
+td #center {
+    width: auto;
+}
+
+/* Classes and Ids */
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #e6f1ff;
+}
+.enterSite:active, .enterSite:hover, .enterSite:link, .enterSite:visited {
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    width: 300px;
+}
+.clickable {
+    margin: 0 0 10px 0;
+}
+.empty {
+    font-size: 1.2em;
+}

@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+/* Elements */
+body, html {
+    height: 100%;
+    padding: 0px;
+    background-color: #1073ce;
+}
+a:link, a:hover, a:visited, a:active {
+    color: #FFF;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+/* Classes and Ids */
+.parallax {
+    /* The image used */
+    background-image: url("../images/Storm-Bailey-Lecture_4.jpg");
+
+    /* Set a specific height */
+    height: 97%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallaxCaption {
+    position: relative;
+    font-size: 1.125em;
+    top: 7%;
+    width: 30%;
+    min-width: 350px;
+    background-color: #1073ce;
+    color: #FFF;
+    padding-bottom: 1px;
+    text-align: center;
+    border-radius: 0px 7px 7px 0px;
+
+}
+.parallaxCaption > img {
+    width: 65%;
+    margin-top: 15px;
+}
+.parallaxCaption > hr {
+    width: 65%;
+    border: 0px;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+}
+.scroll-icon {
+    color: #FFF;
+    padding-top: 2px;
+    padding-right: 9px;
+    direction: rtl;
+    z-index: 1;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 50%;
+    bottom: -20px;
+    margin-left: -50px;
+    border: 2px solid #1073ce;
+    background: #1073ce;
+    border-radius: 6px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.textCont {
+    display: block;
+    background-color: #FFF;
+    text-align: center;
+    padding: 5px 20% 50px 20%;
+    margin-top: 3%;
+    border-top: 5px;
+    border-color: #1073ce;
+    font-size: 1.125em;
+}
+.splashHeader > p {
+    margin: 20px 0;
+}
+.splashHeader > h1 {
+    font-size: 2.5em;
+}
+.splashHeader {
+    margin: auto;
+    width: 100%;
+    display: block;
+    color: #666;
+    text-align: center;
+    font-size: 1.125em;
+    font-family: "Open Sans Regular";
+}
+
+/* Device Formatting */
+@media only screen and (max-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
